@@ -43,12 +43,14 @@ onMounted(loadPreviews);
   <Layout class="project-content">
     <ProjectHero :content="content" :projectId="projectId" />
     <div class="project-content-components">
-      <div
-        v-for="(component, index) in content.components"
-        :key="`${component.type}-${index}`"
-        class="grid project-content-grid"
-      >
-        <ProjectComponent :type="component.type" :props="component.props" :index="index" />
+      <div class="grid project-content-grid">
+        <ProjectComponent
+          v-for="(component, index) in content.components"
+          :key="`${component.type}-${index}`"
+          :type="component.type"
+          :props="component.props"
+          :index="index"
+        />
       </div>
     </div>
     <div class="grid project-content-next-project-grid">

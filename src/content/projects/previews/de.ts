@@ -1,47 +1,40 @@
-import thumbnailCubeWar from "../../../assets/thumbnails/cubewar.webp";
-import thumbnailQuibbo from "../../../assets/thumbnails/quibbo.webp";
-//import thumbnailParticles from "../../../assets/thumbnails/particles.webp";
-import thumbnailPokedex from "../../../assets/thumbnails/pokedex.webp";
-import thumbnailSharkie from "../../../assets/thumbnails/sharkie.webp";
-import thumbnailStreakon from "../../../assets/thumbnails/streakon.webp";
+import thumbnailSolaso from "../../../assets/thumbnails/solaso.png";
+import thumbnailBinggereat from "../../../assets/thumbnails/binggereat.png";
+import thumbnailPoloZava from "../../../assets/thumbnails/polo_zava.png";
+import thumbnailMovara from "../../../assets/thumbnails/movara.png";
+import thumbnailMarieJapan from "../../../assets/thumbnails/marie_japan.png";
 
 import type { ProjectPreview } from "../../types";
 
 export default [
   {
-    title: "StreakOn",
+    title: "Marie Japan",
     slug: "streakon",
-    thumbnail: thumbnailStreakon,
-    description: "App für tägliche Gewohnheiten",
+    thumbnail: thumbnailMarieJapan,
+    description: "Kênh TikTok & Mua sắm mỹ phẩm chính hãng",
   },
   {
-    title: "CubeWar",
+    title: "Solaso",
     slug: "cubewar",
-    thumbnail: thumbnailCubeWar,
-    description: "Multiplayer-Strategiespiel",
+    thumbnail: thumbnailSolaso,
+    description: "Nền tảng thương mại điện tử trực quan",
   },
   {
-    title: "Quibbo",
+    title: "BINGGEREAT MILK",
     slug: "quibbo",
-    thumbnail: thumbnailQuibbo,
-    description: "Multiplayer-Gaming-Plattform",
+    thumbnail: thumbnailBinggereat,
+    description: "Thương hiệu thực phẩm và đồ uống quốc dân Hàn Quốc",
   },
   {
-    title: "Sharkie",
+    title: "MOVARA",
     slug: "sharkie",
-    thumbnail: thumbnailSharkie,
-    description: "2D-Abenteuerspiel",
+    thumbnail: thumbnailMovara,
+    description: "Thời trang thể thao chuyên dụng dành cho nữ",
   },
-  /**  {
-    title: "WebGL Partikel",
-    slug: "particles",
-    thumbnail: thumbnailParticles,
-    description: "Dynamische 3D Partikel",
-  }, */
   {
-    title: "Pokédex",
+    title: "POLO ZAVA",
     slug: "pokedex",
-    thumbnail: thumbnailPokedex,
-    description: "Open-Source Lernprojekt",
+    thumbnail: thumbnailPoloZava,
+    description: "Sản xuất & gia công áo polo cá sấu cotton",
   },
 ] as const satisfies ProjectPreview[];

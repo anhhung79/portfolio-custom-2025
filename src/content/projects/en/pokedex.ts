@@ -1,64 +1,131 @@
-import videoPokedex from "../../../assets/videos/pokedex.mp4";
-
-import pokedex0 from "../../../assets/images/projects/pokedex/pokedex-0.webp";
-import pokedex1 from "../../../assets/images/projects/pokedex/pokedex-1.webp";
-import pokedex2 from "../../../assets/images/projects/pokedex/pokedex-2.webp";
-import pokedex3 from "../../../assets/images/projects/pokedex/pokedex-3.webp";
-
 import type { ProjectContent } from "../../types";
 
 export default {
-  title: "Pokédex",
+  title: "POLO ZAVA",
   theme: "light",
-  tags: ["javascript", "html", "css"],
-  live: "https://pokedex.david-hckh.com/",
-  source: "https://github.com/davidhckh/pokedex",
-  videoBorder: true,
+  tags: [],
+  videoBorder: false,
   description:
-    "One of my first web projects to practice basic web development concepts. The Pokédex is open source so other developers can learn the same way I did.<br/><br/>It also interacts with a public API, to get more experience with asynchronous data fetching.",
+    "POLOZAVA cung cấp các sản phẩm may mặc chất liệu cá sấu cotton với giá gốc tận xưởng và dịch vụ nhận may theo đơn đặt hàng.<br/><br/>Kênh được xây dựng dựa trên việc đăng tải các video trực quan về quy trình sản xuất thực tế tại xưởng may, sử dụng nền tảng TikTok để tiếp cận khách hàng và hỗ trợ chăm sóc khách hàng qua Zalo.",
   components: [
     {
       type: "media",
       props: {
         type: "video",
-        src: videoPokedex,
-        caption: "Pokédex App",
+        src: "/videos/polozava/polo_01.mp4",
+        alt: "Polo Zava Video 1",
+        caption: "Polo Zava Video 1",
+        aspect: "vertical",
       },
     },
     {
       type: "media",
       props: {
-        type: "image",
-        src: pokedex0,
-        alt: "Default View",
-        caption: "Default View",
+        type: "video",
+        src: "/videos/polozava/polo_02.mp4",
+        alt: "Polo Zava Video 2",
+        caption: "Polo Zava Video 2",
+        aspect: "vertical",
       },
     },
     {
       type: "media",
       props: {
-        type: "image",
-        src: pokedex1,
-        alt: "Search Function",
-        caption: "Search Function",
+        type: "video",
+        src: "/videos/polozava/polo_03.mp4",
+        alt: "Polo Zava Video 3",
+        caption: "Polo Zava Video 3",
+        aspect: "vertical",
       },
     },
     {
       type: "media",
       props: {
-        type: "image",
-        src: pokedex2,
-        alt: "Responsive Design",
-        caption: "Responsive Design",
+        type: "video",
+        src: "/videos/polozava/polo_04.mp4",
+        alt: "Polo Zava Video 4",
+        caption: "Polo Zava Video 4",
+        aspect: "vertical",
       },
     },
     {
       type: "media",
       props: {
-        type: "image",
-        src: pokedex3,
-        alt: "Lazy Loading",
-        caption: "Lazy Loading",
+        type: "video",
+        src: "/videos/polozava/polo_05.mp4",
+        alt: "Polo Zava Video 5",
+        caption: "Polo Zava Video 5",
+        aspect: "vertical",
+      },
+    },
+    {
+      type: "media",
+      props: {
+        type: "video",
+        src: "/videos/polozava/polo_06.mp4",
+        alt: "Polo Zava Video 6",
+        caption: "Polo Zava Video 6",
+        aspect: "vertical",
+      },
+    },
+    {
+      type: "media",
+      props: {
+        type: "video",
+        src: "/videos/polozava/polo_07.mp4",
+        alt: "Polo Zava Video 7",
+        caption: "Polo Zava Video 7",
+        aspect: "vertical",
+      },
+    },
+    {
+      type: "media",
+      props: {
+        type: "video",
+        src: "/videos/polozava/polo_08.mp4",
+        alt: "Polo Zava Video 8",
+        caption: "Polo Zava Video 8",
+        aspect: "vertical",
+      },
+    },
+    {
+      type: "media",
+      props: {
+        type: "video",
+        src: "/videos/polozava/polo_09.mp4",
+        alt: "Polo Zava Video 9",
+        caption: "Polo Zava Video 9",
+        aspect: "vertical",
+      },
+    },
+    {
+      type: "media",
+      props: {
+        type: "video",
+        src: "/videos/polozava/polo_10.mp4",
+        alt: "Polo Zava Video 10",
+        caption: "Polo Zava Video 10",
+        aspect: "vertical",
+      },
+    },
+    {
+      type: "media",
+      props: {
+        type: "video",
+        src: "/videos/polozava/polo_11.mp4",
+        alt: "Polo Zava Video 11",
+        caption: "Polo Zava Video 11",
+        aspect: "vertical",
+      },
+    },
+    {
+      type: "media",
+      props: {
+        type: "video",
+        src: "/videos/polozava/polo_12.mp4",
+        alt: "Polo Zava Video 12",
+        caption: "Polo Zava Video 12",
+        aspect: "vertical",
       },
     },
   ],

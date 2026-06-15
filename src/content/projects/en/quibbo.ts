@@ -1,82 +1,141 @@
-import videoQuibbo from "../../../assets/videos/quibbo.mp4";
-
-import quibbo0 from "../../../assets/images/projects/quibbo/quibbo-0.webp";
-import quibbo1 from "../../../assets/images/projects/quibbo/quibbo-1.webp";
-import quibbo2 from "../../../assets/images/projects/quibbo/quibbo-2.webp";
-import quibbo3 from "../../../assets/images/projects/quibbo/quibbo-3.webp";
-import quibbo4 from "../../../assets/images/projects/quibbo/quibbo-4.webp";
-import quibbo5 from "../../../assets/images/projects/quibbo/quibbo-5.webp";
-
 import type { ProjectContent } from "../../types";
 
 export default {
-  title: "Quibbo",
+  title: "BINGGEREAT MILK",
   theme: "light",
-  tags: ["three", "node", "kubernetes", "redis", "postgresql"],
-  videoBorder: true,
+  tags: [],
+  videoBorder: false,
   description:
-    "Quibbo is a platform for fast, round-based multiplayer games. It brings together matchmaking, customizable 3D avatars, and account integration with ranked rewards.<br/><br/>The project started as a technical experiment and grew into a scalable system for testing new game ideas.",
+    "Binggrae là thương hiệu thực phẩm và đồ uống quốc dân đến từ Hàn Quốc, nổi tiếng toàn cầu với các dòng sữa tươi hương trái cây (đặc biệt là sữa chuối) và kem Melona. Tại Việt Nam, bạn có thể dễ dàng mua sản phẩm chính hãng qua các siêu thị, cửa hàng tiện lợi hoặc các nền tảng trực tuyến.",
   components: [
     {
       type: "media",
       props: {
         type: "video",
-        src: videoQuibbo,
-        caption: "User Experience",
+        src: "/videos/binggereat/bg_kb1.mp4",
+        alt: "Binggrae Video 1",
+        caption: "Binggrae Video 1",
+        aspect: "vertical",
       },
     },
     {
       type: "media",
       props: {
-        type: "image",
-        src: quibbo0,
-        alt: "Avatar Creator",
-        caption: "Avatar Creator",
+        type: "video",
+        src: "/videos/binggereat/bg_kb2.mp4",
+        alt: "Binggrae Video 2",
+        caption: "Binggrae Video 2",
+        aspect: "vertical",
       },
     },
     {
       type: "media",
       props: {
-        type: "image",
-        src: quibbo1,
-        alt: "Multiplayer Tic-Tac-Toe",
-        caption: "Multiplayer Tic-Tac-Toe",
+        type: "video",
+        src: "/videos/binggereat/bg_kb3.mp4",
+        alt: "Binggrae Video 3",
+        caption: "Binggrae Video 3",
+        aspect: "vertical",
       },
     },
     {
       type: "media",
       props: {
-        type: "image",
-        src: quibbo2,
-        alt: "Multiple Mini-Games",
-        caption: "Multiple Mini-Games",
+        type: "video",
+        src: "/videos/binggereat/bg_kb4.mp4",
+        alt: "Binggrae Video 4",
+        caption: "Binggrae Video 4",
+        aspect: "vertical",
       },
     },
     {
       type: "media",
       props: {
-        type: "image",
-        src: quibbo3,
-        alt: "Avatar Variations",
-        caption: "Avatar Variations",
+        type: "video",
+        src: "/videos/binggereat/bg_kb5.mp4",
+        alt: "Binggrae Video 5",
+        caption: "Binggrae Video 5",
+        aspect: "vertical",
       },
     },
     {
       type: "media",
       props: {
-        type: "image",
-        src: quibbo4,
-        alt: "Responsive Design",
-        caption: "Responsive Design",
+        type: "video",
+        src: "/videos/binggereat/bg_kb6.mp4",
+        alt: "Binggrae Video 6",
+        caption: "Binggrae Video 6",
+        aspect: "vertical",
       },
     },
     {
       type: "media",
       props: {
-        type: "image",
-        src: quibbo5,
-        alt: "Dark Mode",
-        caption: "Dark Mode",
+        type: "video",
+        src: "/videos/binggereat/bg_kb7.mp4",
+        alt: "Binggrae Video 7",
+        caption: "Binggrae Video 7",
+        aspect: "vertical",
+      },
+    },
+    {
+      type: "media",
+      props: {
+        type: "video",
+        src: "/videos/binggereat/bg_kb8.mp4",
+        alt: "Binggrae Video 8",
+        caption: "Binggrae Video 8",
+        aspect: "vertical",
+      },
+    },
+    {
+      type: "media",
+      props: {
+        type: "video",
+        src: "/videos/binggereat/bg_kb9.mp4",
+        alt: "Binggrae Video 9",
+        caption: "Binggrae Video 9",
+        aspect: "vertical",
+      },
+    },
+    {
+      type: "media",
+      props: {
+        type: "video",
+        src: "/videos/binggereat/bg_kb9_1.mp4",
+        alt: "Binggrae Video 9.1",
+        caption: "Binggrae Video 9.1",
+        aspect: "vertical",
+      },
+    },
+    {
+      type: "media",
+      props: {
+        type: "video",
+        src: "/videos/binggereat/bg_kb10.mp4",
+        alt: "Binggrae Video 10",
+        caption: "Binggrae Video 10",
+        aspect: "vertical",
+      },
+    },
+    {
+      type: "media",
+      props: {
+        type: "video",
+        src: "/videos/binggereat/bg_kb11.mp4",
+        alt: "Binggrae Video 11",
+        caption: "Binggrae Video 11",
+        aspect: "vertical",
+      },
+    },
+    {
+      type: "media",
+      props: {
+        type: "video",
+        src: "/videos/binggereat/bg_kb12.mp4",
+        alt: "Binggrae Video 12",
+        caption: "Binggrae Video 12",
+        aspect: "vertical",
       },
     },
   ],

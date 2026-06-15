@@ -14,6 +14,7 @@ export interface Props {
   alt?: string;
   caption?: string;
   index: number;
+  aspect?: "vertical" | "horizontal";
 }
 
 const props = defineProps<Props>();
@@ -21,6 +22,7 @@ const props = defineProps<Props>();
 const wrapperClasses = computed(() => {
   return {
     "project-media": true,
+    "is-vertical": props.aspect === "vertical",
   };
 });
 
@@ -47,6 +49,16 @@ watchEffect(async (onInvalidate) => {
   });
 });
 
+const handlePlay = (event: Event) => {
+  const currentVideo = event.target as HTMLVideoElement;
+  const allVideos = document.querySelectorAll("video");
+  allVideos.forEach((video) => {
+    if (video !== currentVideo) {
+      video.pause();
+    }
+  });
+};
+
 onMounted(async () => {
   isMounted.value = true;
 });
@@ -67,13 +79,15 @@ onMounted(async () => {
       <video
         v-else
         :src="props.src"
-        autoplay
-        muted
+        controls
+        controlsList="nodownload"
         loop
         playsinline
         preload="metadata"
         class="project-media-video"
         ref="mediaRef"
+        @play="handlePlay"
+        @contextmenu.prevent
       >
         <source :src="props.src" type="video/mp4" />
       </video>
@@ -96,12 +110,29 @@ onMounted(async () => {
   position: relative;
   aspect-ratio: 16 / 9;
 
+  &.is-vertical {
+    grid-column: span 4;
+    max-width: 260px;
+    aspect-ratio: 9 / 16;
+    justify-self: center;
+  }
+
   @include mixins.mq("md") {
     grid-column: 2 / 12;
+
+    &.is-vertical {
+      grid-column: span 4;
+      max-width: 310px;
+    }
   }
 
   @include mixins.mq("lg") {
     grid-column: 3 / 11;
+
+    &.is-vertical {
+      grid-column: span 4;
+      max-width: 310px;
+    }
   }
 
   &-caption {
